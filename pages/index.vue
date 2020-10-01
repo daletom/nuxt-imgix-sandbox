@@ -37,7 +37,7 @@ import ImgixAPI from 'imgix-management-js';
 export default {
   asyncData() {
     const imgix = new ImgixAPI({
-      apiKey: 'ak_5adc6acc31ea10c0716132049da5d3312014a74e4b90c80d4fd301f13d91641'
+      apiKey: ''
     });
 
     return imgix.request(`assets/55e4d9390d42e03905934ad4`).then(res => {
