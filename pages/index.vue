@@ -3,7 +3,7 @@
     <div>
       <div v-for="image in images" :key="image.id">
         <pre>{{ image }}</pre>
-        <img :src="'https://mateodevelops-api.imgix.net' + image.attributes.origin_path" />
+        <img :src="'https://tom.imgix.net' + image.attributes.origin_path" />
       </div>
 
       <h1 class="title">
@@ -37,7 +37,7 @@ import ImgixAPI from 'imgix-management-js';
 export default {
   asyncData() {
     const imgix = new ImgixAPI({
-      apiKey: 'ak_86abfc6d0ee2bb941d7f526a99cdccf7122785566396aac47866e286d81965b8'
+      apiKey: 'ak_5adc6acc31ea10c0716132049da5d3312014a74e4b90c80d4fd301f13d91641'
     });
 
     return imgix.request(`assets/5e9de072aca9ae00019920cc`).then(res => {
